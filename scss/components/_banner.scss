@@ -50,12 +50,14 @@
       font-size: 6.4rem;
       font-weight: 700;
       color: $color-pri;
-      line-height: 4rem;
-      @include max(1200px) {
+      line-height: 6rem;
+      @include max(1220px) {
         font-size: 4rem;
+        line-height: 4rem;
       }
       @include max(800px) {
         font-size: 3rem;
+        line-height: 3rem;
       }
     }
     &-subTitle {

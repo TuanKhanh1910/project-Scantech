@@ -1255,16 +1255,18 @@ img {
   font-size: 6.4rem;
   font-weight: 700;
   color: #c5161d;
-  line-height: 4rem;
+  line-height: 6rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .banner-content-title {
     font-size: 4rem;
+    line-height: 4rem;
   }
 }
 @media screen and (max-width: 800px) {
   .banner-content-title {
     font-size: 3rem;
+    line-height: 3rem;
   }
 }
 .banner-content-subTitle {
