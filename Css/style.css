@@ -1269,6 +1269,12 @@ img {
     line-height: 3rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .banner-content-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
 .banner-content-subTitle {
   margin: 2.4rem 0;
   font-size: 1.6rem;
@@ -1278,6 +1284,11 @@ img {
 @media screen and (max-width: 622px) {
   .banner-content-subTitle {
     margin: 1.2rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-content-subTitle {
+    font-size: 1.4rem;
   }
 }
 .banner-content-btn {

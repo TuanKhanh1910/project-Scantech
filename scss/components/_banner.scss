@@ -59,6 +59,10 @@
         font-size: 3rem;
         line-height: 3rem;
       }
+      @include max(500px) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
     }
     &-subTitle {
       margin: 2.4rem 0;
@@ -67,6 +71,9 @@
       color: $color-text;
       @include max(622px) {
         margin: 1.2rem 0;
+      }
+      @include max(500px) {
+        font-size: 1.4rem;
       }
     }
     &-btn {
