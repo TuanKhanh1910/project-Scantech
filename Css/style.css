@@ -1207,6 +1207,11 @@ img {
   position: relative;
   padding: 8rem 0;
 }
+@media screen and (max-width: 622px) {
+  .banner {
+    padding: 4rem 0;
+  }
+}
 .banner-bg {
   position: absolute;
   top: 50%;
@@ -1241,56 +1246,36 @@ img {
   padding: 0 1.2rem;
   margin-bottom: 2.4rem;
 }
-.banner-content {
-  padding: 0 0 5rem 8rem;
-}
-@media screen and (max-width: 1070px) {
-  .banner-content {
-    padding: 0;
+@media screen and (max-width: 622px) {
+  .banner-item {
+    width: 100%;
   }
 }
 .banner-content-title {
-  width: 60rem;
   font-size: 6.4rem;
   font-weight: 700;
   color: #c5161d;
-  line-height: 6rem;
+  line-height: 4rem;
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   .banner-content-title {
     font-size: 4rem;
-    width: 40rem;
   }
 }
 @media screen and (max-width: 800px) {
   .banner-content-title {
-    width: 30rem;
     font-size: 3rem;
-    line-height: 3rem;
   }
 }
 .banner-content-subTitle {
-  width: 47.5rem;
   margin: 2.4rem 0;
   font-size: 1.6rem;
   font-weight: 400;
   color: #333;
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 622px) {
   .banner-content-subTitle {
-    width: 30rem;
-  }
-}
-@media screen and (max-width: 599.9px) {
-  .banner-content-subTitle {
-    width: 20rem;
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 499.9px) {
-  .banner-content-subTitle {
-    width: 18rem;
-    font-size: 1.2rem;
+    margin: 1.2rem 0;
   }
 }
 .banner-content-btn {
@@ -1324,14 +1309,13 @@ img {
   position: relative;
   z-index: 2;
 }
-@media screen and (max-width: 499.9px) {
-  .banner-content-btn {
-    padding: 0.5rem 0.2rem;
-    font-size: 1.2rem;
-  }
-}
 .banner-inner {
-  width: calc(100 + (100vw - 140.8rem) / 2);
+  width: calc(100% + (100vw - 140.8rem) / 2);
+}
+@media screen and (max-width: 1400px) {
+  .banner-inner {
+    width: 100%;
+  }
 }
 .banner-img {
   padding-top: 85.0630455868%;
@@ -1358,6 +1342,11 @@ img {
   padding: 2rem 4rem;
   border-radius: 2rem;
   background-color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .banner .mySwiper {
+    display: none;
+  }
 }
 @media screen and (max-width: 1200px) {
   .banner .mySwiper {
@@ -1468,7 +1457,7 @@ img {
 .about-wrap {
   min-height: inherit;
   padding: 8rem 1.5rem;
-  width: 60rem;
+  width: 70rem;
   margin-left: auto;
   max-width: 100%;
   display: flex;
@@ -1482,7 +1471,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 2;
   flex-shrink: 0;
 }
 .about-bg img {
@@ -2770,7 +2758,6 @@ img {
 .news-details-item:nth-child(even) .news-wrap {
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-end;
 }
 .news-wrap {
   --col-gap: 2rem;
@@ -2921,7 +2908,7 @@ img {
   font-family: "Montserrat";
   display: flex;
   flex-wrap: wrap;
-  --col-gap: 2.9rem;
+  --col-gap: 2.4rem;
   --row-gap: 2.4rem;
   margin: 0 calc(var(--col-gap) / 2 * -1);
   margin-bottom: calc(var(--row-gap) * -1);

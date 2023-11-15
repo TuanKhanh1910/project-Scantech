@@ -3,6 +3,9 @@
   min-height: 70.367vw;
   position: relative;
   padding: 8rem 0;
+  @include max(622px) {
+    padding: 4rem 0;
+  }
   &-bg {
     position: absolute;
     top: 50%;
@@ -32,6 +35,9 @@
   }
   &-item {
     width: 50%;
+    @include max(622px) {
+      width: 100%;
+    }
     padding: 0 1.2rem;
     margin-bottom: 2.4rem;
     // @include max(639.9px) {
@@ -39,56 +45,42 @@
     // }
   }
   &-content {
-    padding: 0 0 5rem 8rem;
-    @include max(1070px) {
-      padding: 0;
-    }
     // height: 50rem;
     &-title {
-      width: 60rem;
       font-size: 6.4rem;
       font-weight: 700;
       color: $color-pri;
-      line-height: 6rem;
-      @include max(1240px) {
+      line-height: 4rem;
+      @include max(1200px) {
         font-size: 4rem;
-        width: 40rem;
       }
       @include max(800px) {
-        width: 30rem;
         font-size: 3rem;
-        line-height: 3rem;
       }
     }
     &-subTitle {
-      @include max(1070px) {
-        width: 30rem;
-      }
-      @include max(599.9px) {
-        width: 20rem;
-        font-size: 1.4rem;
-      }
-      @include max(499.9px) {
-        width: 18rem;
-        font-size: 1.2rem;
-      }
-      width: 47.5rem;
       margin: 2.4rem 0;
       font-size: 1.6rem;
       font-weight: 400;
       color: $color-text;
+      @include max(622px) {
+        margin: 1.2rem 0;
+      }
     }
     &-btn {
       @include btn;
       padding: 1.5rem 3rem;
-      @include max(499.9px) {
-        padding: 0.5rem 0.2rem;
-        font-size: 1.2rem;
-      }
+      // @include max(499.9px) {
+      //   padding: 0.5rem 0.2rem;
+      //   font-size: 1.2rem;
+      // }
     }
   }
   &-inner {
-    width: calc(100 + ((100vw - 140.8rem) / 2));
+    width: calc(100% + ((100vw - 140.8rem) / 2));
+    @include max(1400px) {
+      width: 100%;
+    }
   }
   &-img {
     padding-top: calc((877 / 1031) * 100%);
@@ -104,6 +96,9 @@
     }
   }
   .mySwiper {
+    @include max(500px) {
+      display: none;
+    }
     position: absolute;
     right: 0;
     left: 0;
