@@ -3,6 +3,7 @@
   padding: 8rem 0;
   @include max(600px) {
     overflow: hidden;
+    padding: 4rem 0;
   }
   //   position: relative;
   @include max(1500px) {

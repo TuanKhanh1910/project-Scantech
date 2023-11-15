@@ -61,22 +61,25 @@
     }
   }
   &-form {
+    margin-bottom: 2.4rem;
     &-label {
       font-size: 1.6rem;
       font-weight: 500;
     }
     &-inputBtn {
       margin-top: 0.8rem;
-      margin-bottom: 2.4rem;
+
       display: flex;
       .form {
         &-input {
           padding: 0 1.6rem;
           border-radius: 1rem 0 0 1rem;
-          width: 34.8rem;
+          // width: 34.8rem;
           height: 5rem;
           outline: none;
           border: none;
+          width: 34.8rem;
+          max-width: 100%;
         }
         &-btn {
           padding: 0.8rem 3.2rem;
@@ -91,7 +94,7 @@
           font-size: 1.6rem;
           font-family: "Montserrat";
           @include max(499.9px) {
-            padding: 0.8rem 1.2rem;
+            padding: 0.8rem 1rem;
           }
           @include transitionRe;
           &:hover {
@@ -102,23 +105,43 @@
     }
   }
   &-nav {
-    .menu {
-      &-item {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 2.4rem;
+    margin: 2.4rem 0;
+  }
+  .col {
+    width: 20%;
+    @include max(1100px) {
+      width: 25%;
+    }
+    @include max(886px) {
+      width: calc((4 / 12) * 100%);
+    }
+    @include max(842px) {
+      width: 20%;
+    }
+    @include max(600px) {
+      width: 25%;
+    }
+    @include max(500px) {
+      width: 50%;
+    }
+  }
+  &-list {
+    @include max(1200px) {
+      --col-gap: 1.2rem;
+      --row-gap: 1.2rem;
+    }
+  }
+  &-item {
+    &:hover {
+      .footer-item-link {
+        color: $color-third;
       }
-      &-link {
-        font-size: 1.6rem;
-        font-weight: 400;
-        transition: all 0.5s;
-        &:hover {
-          color: $color-third;
-        }
-        &:not(:first-child) {
-          margin-left: 2.4rem;
-        }
-      }
+    }
+    &-link {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-white;
+      transition: all 0.5s;
     }
   }
   &-follow {

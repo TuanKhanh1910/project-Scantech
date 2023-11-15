@@ -4,7 +4,7 @@ export default function personSwiper() {
   if (person) {
     let swiper2 = new Swiper(person.querySelector(".personSwiper"), {
       //   effect: "coverflow",
-
+      loop: true,
       grabCursor: true,
       centeredSlides: true,
       breakpoints: {

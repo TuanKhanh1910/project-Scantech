@@ -1,5 +1,11 @@
 .person {
+  // min-height: 88.2rem;
+
   min-height: calc(882 / 1408 * 100vw);
+  @include max(998px) {
+    min-height: 60rem;
+  }
+
   background-color: #151515;
   box-shadow: 0px 4px 19px 0px rgba(51, 51, 51, 0.3);
   position: relative;
@@ -28,6 +34,9 @@
   }
   &-content {
     padding: 12rem 0;
+    @include max(998px) {
+      padding: 0;
+    }
     position: relative;
     z-index: 2;
     @include max(767px) {
@@ -90,61 +99,34 @@
       object-fit: cover;
     }
   }
-  &-details {
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: center;
-    --col-gap: 4rem;
-    --row-gap: 2.4rem;
-    margin: 0 calc(var(--col-gap) / 2 * -1);
-    margin-bottom: calc(var(--row-gap) * -1);
-    @include max(1000px) {
-      --col-gap: 2.4rem;
-    }
-    @include max(998px) {
-      flex-wrap: nowrap;
-    }
-  }
+  // &-details {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   // align-items: center;
+  //   --col-gap: 4rem;
+  //   --row-gap: 2.4rem;
+  //   margin: 0 calc(var(--col-gap) / 2 * -1);
+  //   margin-bottom: calc(var(--row-gap) * -1);
+  //   @include max(1000px) {
+  //     --col-gap: 2.4rem;
+  //   }
+  //   @include max(998px) {
+  //     flex-wrap: nowrap;
+  //   }
+  // }
   &-wrap {
     @include max(998px) {
       padding: 0 2rem;
     }
   }
-  &-item {
-    padding: 0 calc(var(--col-gap) / 2);
-    margin-bottom: var(--row-gap);
-  }
+
   .swiper-slide {
     transform: scale(0.5);
-    // &:first-child {
-    //   transform: scale(0.5) translateX(-48%);
-    // }
-    // &:nth-child(2) {
-    //   transform: scale(0.5) translateX(-120%);
-    // }
-    // &:nth-child(3) {
-    //   transform: scale(0.5) translateX(-190%);
-    // }
-    // &:nth-child(4) {
-    //   transform: scale(0.5) translateX(-260%);
-    // }
-    @include max(998px) {
-      transform: scale(1);
-    }
     &-active {
       transform: scale(1);
-      // &:first-child {
-      //   transform: scale(1) translateX(-48%);
-      // }
-      // &:nth-child(2) {
-      //   transform: scale(1) translateX(-120%);
-      // }
-      // &:nth-child(3) {
-      //   transform: scale(1) translateX(-190%);
-      // }
-      // &:nth-child(4) {
-      //   transform: scale(1) translateX(-260%);
-      // }
+      @include max(998px) {
+        transform: scale(0.5);
+      }
       .person-img {
         padding-top: calc((550 / 377) * 100%);
         position: relative;
